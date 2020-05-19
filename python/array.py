@@ -39,7 +39,7 @@ class ArrayWithDict(object):
 		del self.data[self.length-1]
 		self.length -= 1
 
-	def len(self):
+	def size(self):
 		return self.length
 
 
@@ -78,7 +78,7 @@ class ArrayWithList(object):
 		del self.data[self.length-1]
 		self.length -= 1
 
-	def len(self):
+	def size(self):
 		return self.length
 
 
