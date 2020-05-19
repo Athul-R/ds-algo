@@ -39,9 +39,11 @@ class ArrayWithDict(object):
 		del self.data[self.length-1]
 		self.length -= 1
 
+
+
 class ArrayWithList(object):
 	"""
-	This is the array implementation with data as the Dict Object
+	This is the array implementation with data as the List Object
 
 	"""
 	def __init__(self, arg):
