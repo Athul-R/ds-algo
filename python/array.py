@@ -32,8 +32,6 @@ class ArrayWithDict(object):
 		self.shift_items(index)
 		return item
 
-
-
 	def shift_items(self, index):
 		for i in range(index, self.length):
 			self.data[i] = self.data[i+1]
@@ -68,8 +66,6 @@ class ArrayWithList(object):
 		item = self.data[index]
 		self.shift_items(index)
 		return item
-
-
 
 	def shift_items(self, index):
 		for i in range(index, self.length):
