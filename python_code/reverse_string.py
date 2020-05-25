@@ -15,3 +15,8 @@ def reverse_string(string: str):
 
 	return string
 
+
+if __name__ ==  "__main__":
+ 
+ string = "my name is Khan"
+ print(reverse_string(string))
