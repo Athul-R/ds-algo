@@ -14,7 +14,7 @@ class Hash(object):
 	    return hash;
   
 
-  	def set(key, value):
+  	def set(self, key, value):
   		address = self.__hash(key)
   		if self.data[address] == -1:
 			self.data[address] = [(key, value)]
@@ -24,7 +24,7 @@ class Hash(object):
 		print(self.data)
   		return None
 
-	def get(key):
+	def get(self, key):
   		address = self.__hash(key)
 
   		current_bucket = self.data[address]
@@ -37,6 +37,17 @@ class Hash(object):
 
 
   		raise KeyError("Key Not Found") 
+
+	def keys(self):
+		keys_list = list()
+
+		for i in range(self.size):
+			if not self.data[i] == -1:
+				keys_list.append(list(map(lambda x: x[0], self.data[i])))
+
+		return keys_list
+
+
 
 
 
