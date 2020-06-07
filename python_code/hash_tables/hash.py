@@ -15,13 +15,13 @@ class Hash(object):
   
 
   	def set(key, value):
-  		hash_value = self.__hash(key)
-  		self.data[hash_value] = value
+  		address = self.__hash(key)
+  		self.data[address] = value
   		return None
 
 	def get(key):
-  		hash_value = self.__hash(key)
-  		return self.data[hash_value]
+  		address = self.__hash(key)
+  		return self.data[address]
 
 
 
